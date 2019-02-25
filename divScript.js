@@ -1,4 +1,4 @@
-var div = document.getElementById('divas'),
+var div = document.getElementById('selectDiv'),
     x1 = 0,
     y1 = 0,
     x2 = 0,
