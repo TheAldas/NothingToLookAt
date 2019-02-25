@@ -25,5 +25,5 @@ onmousemove = function (e) {
     reCalc()
 };
 onmouseup = function (e) {
-    divas.hidden = 1
+    div.hidden = 1
 };
