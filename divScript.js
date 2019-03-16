@@ -11,19 +11,23 @@ function reCalc() {
     div.style.left = x3 + 'px';
     div.style.top = y3 + 'px';
     div.style.width = x4 - x3 + 'px';
-    div.style.height = y4 - y3 + 'px'
+    div.style.height = y4 - y3 + 'px';
 }
 onmousedown = function (e) {
-    div.hidden = 0;
-    x1 = e.clientX;
-    y1 = e.clientY;
-    reCalc()
+    if (window.event.button === 0){
+      div.hidden = 0;
+      x1 = e.clientX;
+      y1 = e.clientY;
+      reCalc();
+    }
 };
 onmousemove = function (e) {
     x2 = e.clientX;
     y2 = e.clientY;
-    reCalc()
+    reCalc();
 };
 onmouseup = function (e) {
-    div.hidden = 1
+    if (window.event.button === 0) {
+      div.hidden = 1;
+    }
 };
